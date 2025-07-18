@@ -34,9 +34,6 @@ driver.find_element(By.CSS_SELECTOR, '[data-qa="subject"]').send_keys("Product q
 driver.find_element(By.ID, "message").send_keys("Product quality is not good")
 time.sleep(5)
 
-# driver = webdriver.Chrome()
-# driver.get("https://www.example.com/upload")
-
 upload_input = driver.find_element(By.CSS_SELECTOR, 'input.form-control[type="file"]')
 upload_input.send_keys(r"C:\Users\Kanchi\Downloads\Contract (1).pdf")  # Use raw string
 
