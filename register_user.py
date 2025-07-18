@@ -92,6 +92,10 @@ element = driver.find_element(By.CLASS_NAME, "title")
 assert element.is_displayed()
 print("Account created.")
 
+with open("user_credentials.txt", "w") as f:
+    f.write(f"{new_email},Test@123")
+
+
 driver.find_element(By.CSS_SELECTOR, '[data-qa="continue-button"]').click()
 
 time.sleep(5)
